@@ -19,8 +19,10 @@ todo
  - process health（プロセスの状態）
    - https://cloud.google.com/monitoring/alerts/ui-conditions-ga
 
-### process health（プロセスの状態）
+### uptime check（稼働時間チェック）
+おそらくこれでHTTPで死活監視してくれる。
 
+### process health（プロセスの状態）
 特定のパターンと一致するプロセスの数が期間時間枠の間にしきい値を上回るか下回った場合にインシデントをトリガーするよう、このポリシーを構成することができます。
 
 #### 例

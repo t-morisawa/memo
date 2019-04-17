@@ -16,5 +16,12 @@ todo
    -  https://cloud.google.com/monitoring/api/metrics_gcp
  - uptime check（稼働時間チェック）
    - https://cloud.google.com/monitoring/uptime-checks/
- - process health（プロセスの条件）
+ - process health（プロセスの状態）
    - https://cloud.google.com/monitoring/alerts/ui-conditions-ga
+
+### process health（プロセスの状態）
+
+特定のパターンと一致するプロセスの数が期間時間枠の間にしきい値を上回るか下回った場合にインシデントをトリガーするよう、このポリシーを構成することができます。
+
+#### 例
+たとえば、プロジェクト内のすべての Compute Engine VM インスタンスにおいて、名前に nginx が含まれ、オーナーが root であるプロセスの数を数える

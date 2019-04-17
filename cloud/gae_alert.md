@@ -14,7 +14,7 @@ todo
 ## アラートポリシー
  - metric
    -  https://cloud.google.com/monitoring/api/metrics_gcp
- - uptime check（）
+ - uptime check（稼働時間チェック）
    - https://cloud.google.com/monitoring/uptime-checks/
  - process health（プロセスの条件）
    - https://cloud.google.com/monitoring/alerts/ui-conditions-ga

@@ -1,0 +1,42 @@
+# GAE/Python3でNDBを使用することはできない（2019年4月現在）
+
+# 概要
+> The ndb ORM library is not available for Python 3.
+
+https://cloud.google.com/appengine/docs/standard/python3/python-differences
+
+以下は補足説明。
+
+# NDBとは
+
+App EngineからDatastoreへの接続をサポートするライブラリ。
+
+ORM風味にデータの読み書きができる。
+
+DjangoのMIDDLEWAREに設定を追加するだけで利用可能。
+
+**しかしこれはGAE/Python2でしか利用できない。**
+
+# Python3での動作
+
+SDKを読みに行ってくれず、以下のようなエラーが発生
+
+```
+No module named 'google'
+No module named 'google.appengine'
+```
+
+`pip installgoogle-api-python-client` や `gcloud components install app-engine-python-extras` などしてもNG。
+
+# 代わりに何を使えばいいのか
+
+## 公式
+
+Cloud Datastoreのライブラリを使えばよい。
+https://cloud.google.com/datastore/docs/reference/libraries
+
+## サードパーティ
+
+NDBをPython3で動かすためのプロジェクト
+https://github.com/googleapis/python-ndb
+

@@ -103,6 +103,8 @@ wrapRootElementはGatsbyのサーバーレンダリングプロセス中に実�
 ./gatsby-browser.js
 ```
 
+これと `wrap-with-provider.js` というおまじないを書いてやればあとはsrc以下でコンポーネントを定義すればOK
+
 
  - `Link` タグで遷移した場合はstateは保持されるが、`a` タグで遷移した場合はstateは破棄される
  - 多分stateは保持するのが正しいのだとは思うが、今のSCAMPERアプリをだいぶいじらないといけないのでだるい。

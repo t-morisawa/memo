@@ -96,6 +96,14 @@ wrapRootElementはGatsbyのサーバーレンダリングプロセス中に実�
 
 ## 公式のサンプル
 
+よくわからないが、以下の二種類のエンドポイントを用意する必要があるらしい。サーバは用意したくないのだがSSRできるものなのか？
+
+```
+./gatsby-ssr.js
+./gatsby-browser.js
+```
+
+
  - `Link` タグで遷移した場合はstateは保持されるが、`a` タグで遷移した場合はstateは破棄される
  - 多分stateは保持するのが正しいのだとは思うが、今のSCAMPERアプリをだいぶいじらないといけないのでだるい。
  - stateをリセットする方法がこの辺りで紹介されている。 https://stackoverflow.com/questions/35622588/how-to-reset-the-state-of-a-redux-store

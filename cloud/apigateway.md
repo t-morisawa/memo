@@ -21,6 +21,21 @@ Unable to put integration on 'ANY' for resource at path '/{proxy+}': Invalid fun
 
 ### Integration(統合)とは
 
-よくわからないのでこのチュートリアルをやってみるといいのでは。
+よくわからないのでこのチュートリアルをやってみる。
 
 https://docs.aws.amazon.com/ja_jp/apigateway/latest/developerguide/api-gateway-tutorials.html
+
+ANYとは、HTTP methodのことをさすっぽい。
+
+API Gatewayが受け取ったリクエストをどこに流すか。それをどこと統合するかと呼ぶらしい。
+
+HTTPプロキシはHTTPエンドポイントに流し、LambdaプロキシはLambdaに流す
+
+### HTTPプロキシのチュートリアル
+
+デプロイするとこんなエンドポイントが発行される。
+
+https://xxxxxx.execute-api.ap-northeast-1.amazonaws.com/test/
+
+ここにパラメータを付与するとそれに基づいてプロキシへリクエストされる
+

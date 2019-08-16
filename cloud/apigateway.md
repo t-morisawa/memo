@@ -39,3 +39,8 @@ https://xxxxxx.execute-api.ap-northeast-1.amazonaws.com/test/
 
 ここにパラメータを付与するとそれに基づいてプロキシへリクエストされる
 
+### 残件
+
+色んなチュートリアルが残っているのでそれも試してみると良いかもしれない
+
+https://docs.aws.amazon.com/ja_jp/apigateway/latest/developerguide/api-gateway-tutorials.html

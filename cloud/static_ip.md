@@ -20,6 +20,14 @@
 # Nat Gateway
  - Elastic IPと言うサービスで静的IPを取得すること
 
+# AWS Global Accelerator
+ - 多分、入り口のIPを固定するサービスで、今回の用件とは異なる感じ
+ - AWSのアプリケーションの手前に置くやつ
+
+# Network Load Balancer
+ - IPを固定することが可能
+ - これも入口のIPのため、用件とは異なる
+
 # メモ
  - 入口をIP固定したいのか、出口をIP固定したいのか？
    - 今回は出口のはず。

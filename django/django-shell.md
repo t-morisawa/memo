@@ -50,3 +50,11 @@ $ python manage.py shell
  - カスタムフィールドを作る
  - enumをchoice型にマッピングする
  - Django 3.0ではEnumのサポートが始まったらしい？
+
+# 汎用APIViewのフィールドが見たい
+```
+$ python manage.py shell
+>>> from django.views.generic import DetailView
+>>> dir(DetailView)
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_allowed_methods', 'as_view', 'content_type', 'context_object_name', 'dispatch', 'extra_context', 'get', 'get_context_data', 'get_context_object_name', 'get_object', 'get_queryset', 'get_slug_field', 'get_template_names', 'http_method_names', 'http_method_not_allowed', 'model', 'options', 'pk_url_kwarg', 'query_pk_and_slug', 'queryset', 'render_to_response', 'response_class', 'slug_field', 'slug_url_kwarg', 'template_engine', 'template_name', 'template_name_field', 'template_name_suffix']
+```

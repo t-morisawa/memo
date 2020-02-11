@@ -66,4 +66,11 @@ class User(models.Model):
  - リレーションシップは何と何の間にできる？
  -> フィールドからテーブルの間にできる(1対1, 1対N, N対N)
 
+# Railsについて
+
 Railsの場合は多対多を定義するフィールドは存在せず、中間テーブルに相当するモデルを作ることになる様子。
+
+Active Record の関連付け
+https://railsguides.jp/association_basics.html
+
+referenceというのもあるが、マイグレーションのことを学ばないと理解できなさそう。

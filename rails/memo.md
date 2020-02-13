@@ -40,3 +40,4 @@ http://www.tohoho-web.com/ruby/variables.html
 # TODO
  - Railsのルーティングファイルの読み方
  - JBuilder(viewファイル)
+ - configディレクトリ

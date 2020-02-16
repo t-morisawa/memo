@@ -27,7 +27,8 @@ Built Template   : .aws-sam/build/template.yaml
 
 ### sam package
 
-S3にパッケージをアップデートするコマンドっぽい？
+ - CFnから生成されたリソースをアーカイブしてS3に上げてくれる機能
+ - 主にSAMで利用する
 
 ### sam deploy
 

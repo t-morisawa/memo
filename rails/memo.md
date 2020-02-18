@@ -38,5 +38,4 @@ http://www.tohoho-web.com/ruby/variables.html
  - ただしSPAにおいては、jbuilderというのを使う感じになる。
 
 # TODO
- - JBuilder(viewファイル)
  - configディレクトリ

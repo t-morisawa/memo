@@ -39,7 +39,12 @@ callApi()
 
 # asyncio
 
-xxx
+ - Pythonでasync/awaitを使うためのライブラリ
+ - JSのものとは名称が異なる
+    - Promise <=> Future
+    - async function <=> コルーチン
+ - Taskという、コルーチンを並列で実装するためのオブジェクト
+ - asyncio自体はこれ以外にも多様な機能を持つが、async/awaitを普通に使うには一旦ここまでの理解で良さそう
 
 # ASGI
 

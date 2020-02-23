@@ -62,3 +62,6 @@ callApi()
  - 一方でWebSocketやGraphQLにも対応している
  - バックグラウンドタスク: ジョブキューでやっているようなことを標準でできるっぽい
  - 
+# aiohttp
+
+ - Pythonでfetch(asyncio対応の非同期なHTTPリクエスト)するためのライブラリ

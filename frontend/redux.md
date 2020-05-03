@@ -57,3 +57,39 @@ replaceReducer(nextReducer)
  - 公式では「ほとんどの場合、Reactバインディングと開発者ツールも必要になります。」という扱いになっている。
  - 組み込みサンプルでもreact-reduxが使われたものが紹介されている。
  - ReduxをReactで使う場合のヘルパというイメージなのかな
+
+# react-redux
+
+## 概要
+
+ - Reduxチームによって管理されている
+
+## API
+
+```
+connect
+Provider
+```
+
+### connect
+
+ - 要するにReactコンポーネントをReduxストアにconnectしている
+ - 具体的には、接続されたコンポーネントに、ストアから必要なデータの一部と、アクションをストアにディスパッチするために使用できる関数を提供する
+ - 任意引数として、 `mapStateToProps` `mapDispatchToProps` などをとる
+
+#### mapStateToProps
+
+ - state => Objectな関数
+ - 戻り値のObjectがコンポーネントのpropsとして渡される
+ - 内部的には、Reduxの `store.subscribe` にこの関数が渡されている。よってdispatchされるごとにこの関数が呼び出される
+
+#### mapDispatchToProps
+
+ - dispatch => Objectな関数（ただし実際は後述の短縮形として利用することも多い）
+ - 戻り値のObjectがコンポーネントのpropsとして渡される
+ - Objectの各要素はactionをdispatchするような関数となる
+    - 例: `increment: () => dispatch({ type: 'INCREMENT' })`
+
+#### mapDispatchToProps（短縮形）
+
+ - 各要素がactionCreatorであるオブジェクト

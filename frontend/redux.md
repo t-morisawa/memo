@@ -93,3 +93,18 @@ Provider
 #### mapDispatchToProps（短縮形）
 
  - 各要素がactionCreatorであるオブジェクト
+
+#### connectの特殊な使い方
+
+以下のようにconnectを引数なしで呼び出すと、propsとしてdispatchが関数が渡される
+
+```
+export default connect()(TodoApp)
+```
+
+## Why react-redux?
+ 
+ - 任意のFWでReduxを使用している場合、通常、UIコードからReduxストアと直接対話するのではなく、「UIバインディング」ライブラリを使用して、ReduxをUIフレームワークと結び付けます。
+ - react-reduxを使用する理由を理解するには、「UIバインディングライブラリ」の機能を理解することが役立つ場合があります。
+ - ReduxとReactを統合するには、ストアのアップデートを購読する必要などがあるが、それを手動で作成するのが面倒なので、こういったバインディングアプリがあると考えればOK。
+ - また、パフォーマンスも最適化されている

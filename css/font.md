@@ -32,3 +32,20 @@ string型とは別にurl型というのがある。以下のように使われ�
 ```
 background: url("topbanner.png") #00D no-repeat fixed;
 ```
+
+## 変数
+
+CSSには変数の概念がないが、Sassには変数があり、以下のように定義する。
+
+```
+$font-family-base: 'Sawarabi Mincho', sans-serif;
+```
+
+## SassとSCSS
+
+ - Sassはコンパイラまで含めた言語実装、SCSSはSassの記法のうちの一つ
+ - SassがSCSSをコンパイルしてCSSを生成するというイメージ
+ - Sass vs PostCSS どちらも記法はSCSS ということもある
+ - postcssはプラグインを追加してさらに独自の記法を作っていくこともできる
+ - オリジナルはRuby製らしい
+ - Sass = 変数、for、if、ネストなどが利用できる

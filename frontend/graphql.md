@@ -4,6 +4,7 @@
 ## 目的
  - RESTのより深い理解
  - GatsbyにおけるGraphQLの理解
+ - gRPCとの比較
  
 ## GraphQLとは
  - クエリ言語とスキーマ言語からなるWeb APIの規格
@@ -39,3 +40,27 @@
  - シンプル
    - 型、クエリ、リゾルバがGraphQLを複雑にしている
  - ライブラリが充実している
+
+# gRPC
+ - xmlrpc, json-rpc
+ - protocol buffers
+ - HTTP/2でRPCを実現するための規格
+ - Pub/Sub, FireStore, QUIC
+ - マイクロサービス向け
+
+## メリット
+ - インターフェース定義がprotoファイルを確認することで確実に把握できる
+ - ルーティングの実装、enc/devとかが楽
+
+## デメリット
+ - ブラウザ(javascript)ではgrpc-gatewayを挟まないと使用できない
+ - データがシリアライズされているので、通信内容の監視がしにくい
+
+## gRPC vs  REST
+ - レスポンスが独自プロトコル(Protocol Buffers)であり、シリアライザに対応する型に変換する必要がない
+ - これにより送信データ量も少なくなり高速
+
+### gRPC vs GraphQL
+ - ただ、gRPCはGraphqlのように柔軟なクエリ（関数呼び出し）はない。
+ - サービスという形でRPCの関数を呼び出し結果を得るが、その結果の形は固定。
+ - また、Mediumの記事でも述べられている通り、gRPCは低レベル向き、GraphQLは高レベル向き。

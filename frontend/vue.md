@@ -22,7 +22,15 @@
 
 ## vue-cli
 
- -　
+ - 上記で上げた一式や、index.htmlや起動コマンドなどが揃った一式を作成してくれたりする
+ - Reactでいうcreate-react-app
+ 
+```
+npm install -g @vue/cli
+vue create my-project
+cd my-project
+npm run serve
+```
 
 ## dev server
 

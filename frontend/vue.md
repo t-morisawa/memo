@@ -32,6 +32,16 @@ cd my-project
 npm run serve
 ```
 
+## nuxt.js
+
+ - Vueのフレームワーク
+
+```
+npm init nuxt-app <project-name>
+cd <project-name>
+yarn dev
+```
+
 ## dev server
 
  - webpack dev server
